@@ -6,7 +6,8 @@ var questions = [
   ['What is missing in this link tag link href="css/styles.css" title="Main Styles"', 'rel="stylesheet"'],
   ['What is the hex value for the color white', '#FFFFFF'],
   ['How would you remove a child element from the DOM', 'node.removeChild(child);'],
-  ['From the terminal, how do you create a react app', 'create-react-app']
+  ['From the terminal, how do you create a react app', 'create-react-app'],
+  ['How would you find the last value in an array that named array', 'array[array.length - 1]']
 ];
 var correctAnswers = 0;
 var question;
