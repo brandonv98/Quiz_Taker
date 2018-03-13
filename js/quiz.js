@@ -7,7 +7,9 @@ var questions = [
   ['What is the hex value for the color white', '#FFFFFF'],
   ['How would you remove a child element from the DOM', 'node.removeChild(child);'],
   ['From the terminal, how do you create a react app', 'create-react-app'],
-  ['How would you find the last value in an array that named array', 'array[array.length - 1]']
+  ['How would you find the last value in an array that named array', 'array[array.length - 1]'],
+  ['How would you finish this jason request JSON.p____()', 'JSON.parse();'],
+  ['How would you finish this jason request const data = JSON.p____()', 'JSON.parse();']
 ];
 var correctAnswers = 0;
 var question;
