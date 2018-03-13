@@ -28,7 +28,7 @@ function print(message) {
   outputDiv.innerHTML = message;
 }
 
-handleQuiz = (currentQuestion) => {
+handleQuizQuestions = (currentQuestion) => {
   if (currentQuestion.length === 0) {
     handleEndQuiz();
   } else {
@@ -39,7 +39,7 @@ handleQuiz = (currentQuestion) => {
 handleEndQuiz = () => {
   labelTag.setAttribute('class', 'hidden');
   labelTag.previousElementSibling.innerHTML = 'Thanks for playing!';
-  inputTag.setAttribute('class', 'hidden');
+  inputTag.setAttribute('class', 'hidden'); // hides input also
   button.innerHTML = 'View Results';
 }
 
@@ -49,7 +49,9 @@ startQuiz = () => {
 };
 
 handleHalfTimeBreak = (array) => {
-  if (array.length === 2) {
+  let half = array.length;
+  half = half / 2 + 3; // Time Break for half time
+  if (array.length === half) {
     const h1 = labelTag.previousElementSibling;
     const div = h1.parentNode;
     h1.innerHTML = 'Half way break!';
@@ -86,17 +88,17 @@ button.addEventListener('click', (e) => {
     if (response === answer) {
       correctAnswers += 1;
       correct.push(question);
-      handleQuiz(questions);
+      handleQuizQuestions(questions);
       inputTag.value = '';
     } else {
       wrong.push(question);
-      handleQuiz(questions);
+      handleQuizQuestions(questions);
       inputTag.value = '';
     }
   } else if (e.target.textContent === 'View Results') {
     resultsDisplay();
   } else {
-    handleQuiz(questions);
+    handleQuizQuestions(questions);
     startQuiz();
   }
 });
