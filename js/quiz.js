@@ -8,8 +8,14 @@ var questions = [
   ['How would you remove a child element from the DOM', 'node.removeChild(child);'],
   ['From the terminal, how do you create a react app', 'create-react-app'],
   ['How would you find the last value in an array that named array', 'array[array.length - 1]'],
-  ['How would you finish this jason request JSON.p____()', 'JSON.parse();'],
-  ['How would you finish this jason request const data = JSON.p____()', 'JSON.parse();']
+  ['How would you finish this json request JSON.p____()', 'JSON.parse();'],
+  ['What types of elements are nexted in a select element?', '<option></option>'],
+  ['How would you write a select element in html, given the following code? <\fform> YOUR CODE HERE <\f/form>', '<select></select>'],
+  ['In a form element, with the method attribute equal to post (method="POST"). Write a submit button, NOT for JavaScript.', '<input type="submit"/>'],
+  ['What does position fixed values go to?', 'html root'],
+  ['What does position relative values go to?', 'parent element'],
+  ['How would you enable a input element in JavaScript?', 'element.removeAttribute("disabled", true)'],
+  ['How would you disable a input element in JavaScript?', 'element.setAttribute("disabled", true)']
 ];
 var correctAnswers = 0;
 var question;
