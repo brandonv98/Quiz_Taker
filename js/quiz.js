@@ -16,7 +16,7 @@ var questions = [
   ['What does position relative values go to?', 'parent element'],
   ['How would you enable a input element in JavaScript?', 'element.removeAttribute("disabled", true)'],
   ['How would you disable a input element in JavaScript?', 'element.setAttribute("disabled", true)'],
-  ['What in JavaScript, what is the document typeof?', 'object)']
+  ['In JavaScript, what is the document "typeof" define as?', 'object)']
 ];
 var correctAnswers = 0;
 var question;
